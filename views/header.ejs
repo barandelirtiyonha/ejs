@@ -1,0 +1,10 @@
+<h3>
+  Links to blog posts:
+</h3>
+<a href="/">Go to homepage</a><br>
+<div class="navbar">
+  Blog posts:
+  <% urls.forEach(function (url) { %>
+  <a href="/<%= url %>"><%= url.replace('.md', '') %> </a>
+  <% }) %>
+</div>
